@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { ExternalLink, Github } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
@@ -29,13 +29,13 @@ const projects = [
     website: "#",
     github: "#",
   },
-]
+];
 
 export function ProjectsSection() {
   return (
     <section id="projects" className="py-20 border-b border-border">
       <div className="max-w-6xl mx-auto px-6">
-                <div className="text-center mb-16 scroll-animate">
+        <div className="text-center mb-16 scroll-animate">
           <div className="newspaper-border bg-card p-6 inline-block">
             <h2 className="text-4xl newspaper-headline text-foreground mb-2">
               PROJECTS
@@ -45,7 +45,6 @@ export function ProjectsSection() {
             </p>
           </div>
         </div>
-
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
@@ -63,24 +62,39 @@ export function ProjectsSection() {
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-bold text-card-foreground mb-2">{project.name}</h3>
+                <h3 className="text-xl font-bold text-card-foreground mb-2">
+                  {project.name}
+                </h3>
 
-                <p className="text-muted-foreground mb-4 text-sm leading-relaxed">{project.description}</p>
+                <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+                  {project.description}
+                </p>
 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
-                    <span key={tech} className="px-2 py-1 bg-accent text-accent-foreground text-xs rounded-md">
+                    <span
+                      key={tech}
+                      className="px-2 py-1 bg-accent text-accent-foreground text-xs rounded-md"
+                    >
                       {tech}
                     </span>
                   ))}
                 </div>
 
                 <div className="flex gap-2">
-                  <Button size="sm" variant="outline" className="flex-1 bg-transparent">
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="flex-1 bg-transparent"
+                  >
                     <ExternalLink className="mr-2 w-4 h-4" />
                     Website
                   </Button>
-                  <Button size="sm" variant="outline" className="flex-1 bg-transparent">
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="flex-1 bg-transparent"
+                  >
                     <Github className="mr-2 w-4 h-4" />
                     GitHub
                   </Button>
@@ -91,5 +105,5 @@ export function ProjectsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
