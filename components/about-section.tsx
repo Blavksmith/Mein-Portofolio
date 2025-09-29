@@ -58,7 +58,7 @@ export function AboutSection() {
                   <div className="w-30 h-32 flex justify-center items-center overflow-hidden border-2 border-primary">
                     <Image
                       src="/foto-profil.jpeg"
-                      alt="Avatar"
+                      alt="Avatars"
                       width={300}
                       height={300}
                       className="object-cover scale-150"
