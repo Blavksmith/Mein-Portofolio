@@ -56,7 +56,7 @@ export function AboutSection() {
               <div className="text-center mb-6">
                 <div className="w-48 h-48 mx-auto bg-gradient-to-br from-primary/20 to-primary/5 newspaper-border flex items-center justify-center mb-4">
                   <div className="w-30 h-32 flex justify-center items-center overflow-hidden border-2 border-primary">
-                    <Image
+                    <img
                       src="/foto-profil.jpeg"
                       alt="Avatars"
                       width={300}
