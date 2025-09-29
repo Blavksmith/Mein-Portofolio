@@ -7,7 +7,7 @@ const projects = [
     description:
       "A comprehensive task management platform built with Next.js and Supabase. Features real-time collaboration, project organization, and deadline tracking.",
     tech: ["Next.js", "Supabase", "TypeScript", "Tailwind CSS"],
-    image: "",
+    image: "/task-master.png",
     website: "#",
     github: "#",
   },
