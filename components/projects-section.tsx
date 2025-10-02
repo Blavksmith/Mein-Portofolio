@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 
@@ -6,28 +8,43 @@ const projects = [
     name: "TaskMaster",
     description:
       "A comprehensive task management platform built with Next.js and Supabase. Features real-time collaboration, project organization, and deadline tracking.",
-    tech: ["Next.js", "Supabase", "TypeScript", "Tailwind CSS"],
+    tech: ["Next.js", "Supabase", "TypeScript", "Tailwind CSS", "Shadcn UI"],
     image: "/task-master.png",
-    website: "#",
-    github: "#",
+    website: "https://task-master-apps-tan.vercel.app/",
+    github: "https://github.com/Blavksmith/TaskMaster",
   },
   {
-    name: "Project 2",
+    name: "Remora",
+    description:
+      "Smart flashcard generator that turns your notes into easy-to-memorize question-answer cards. Designed to help students learn efficiently, stay organized, and retain knowledge longer.",
+    tech: [
+      "Next.js",
+      "Tailwind",
+      "Typescript",
+      "Supabase",
+      "ESLint",
+      "Framer Motion",
+    ],
+    image: "/remora.png",
+    website: "https://remora-flashcard-ai.vercel.app/",
+    github: "https://github.com/Blavksmith/Remora",
+  },
+  {
+    name: "Molecul",
     description:
       "Modern social media platform with real-time messaging, post sharing, and user interactions. Built with scalable architecture and responsive design.",
-    tech: ["Next.js", "MongoDB", "Socket.io", "React"],
-    image: "",
-    website: "#",
-    github: "#",
-  },
-  {
-    name: "Projectt 3",
-    description:
-      "Environmental impact tracking application that helps users monitor their carbon footprint and adopt sustainable practices.",
-    tech: ["React", "Node.js", "PostgreSQL", "Chart.js"],
-    image: "",
-    website: "#",
-    github: "#",
+    tech: [
+      "Next.js",
+      "Typescript",
+      "Clerk",
+      "Neon",
+      "Prisma",
+      "PostgreSQL",
+      "UploadThing",
+    ],
+    image: "/molecul.png",
+    website: "https://molecul-social-apps.vercel.app/",
+    github: "https://github.com/Blavksmith/Molecul-Social-App",
   },
 ];
 
@@ -86,6 +103,7 @@ export function ProjectsSection() {
                     size="sm"
                     variant="outline"
                     className="flex-1 bg-transparent"
+                    onClick={() => window.open(project.website, "_blank")}
                   >
                     <ExternalLink className="mr-2 w-4 h-4" />
                     Website
@@ -94,6 +112,7 @@ export function ProjectsSection() {
                     size="sm"
                     variant="outline"
                     className="flex-1 bg-transparent"
+                    onClick={() => window.open(project.github, "_blank")}
                   >
                     <Github className="mr-2 w-4 h-4" />
                     GitHub

@@ -140,6 +140,14 @@ export function AboutSection() {
                 </footer>
               </blockquote>
             </div>
+
+            <div className="text-center rounded-md">
+              <a href="/CV-Melvin-Jordan.pdf" download>
+                <Button size="lg" variant="default">
+                  Download My Resume
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </div>

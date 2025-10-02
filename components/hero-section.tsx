@@ -69,7 +69,7 @@ export function HeroSection() {
           <div className="newspaper-border bg-background p-4">
             <div className="text-center">
               <div className="flex items-center justify-between mb-2">
-                <div className="text-xs font-mono">EST. 2024</div>
+                <div className="text-xs font-mono">EST. 2025</div>
                 <div className="text-xs font-mono">INDONESIA</div>
               </div>
               <h2 className="text-2xl font-bold newspaper-headline tracking-wider">
