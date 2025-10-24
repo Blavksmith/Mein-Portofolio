@@ -9,7 +9,7 @@ import {
   SiNextdotjs,
   SiNodedotjs,
   SiGit,
-  SiFigma,
+  SiDotnet,
   SiTailwindcss,
   SiSupabase,
   SiVercel,
@@ -26,7 +26,7 @@ const technologies = [
   { name: "Next.js", category: "Framework", icon: SiNextdotjs },
   { name: "Node.js", category: "Runtime", icon: SiNodedotjs },
   { name: "Git", category: "Tool", icon: SiGit },
-  { name: "Figma", category: "Design", icon: SiFigma },
+  { name: "ASP.NET", category: "Framework", icon: SiDotnet },
   { name: "Tailwind", category: "Styling", icon: SiTailwindcss },
   { name: "Supabase", category: "Database", icon: SiSupabase },
   { name: "Vercel", category: "Hosting", icon: SiVercel },
@@ -110,10 +110,12 @@ export function TechSection() {
         <div className="mt-16 text-center">
           <div className="inline-block newspaper-border bg-card p-4">
             <p className="text-xs newspaper-body text-muted-foreground">
-              "Building for the web is not just about writing code, it's more about
-              crafting experience that matter."
+              "Building for the web is not just about writing code, it's more
+              about crafting experience that matter."
             </p>
-            <div className="text-xs font-mono mt-2">-My Personal Experience</div>
+            <div className="text-xs font-mono mt-2">
+              -My Personal Experience
+            </div>
           </div>
         </div>
       </div>
