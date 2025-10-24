@@ -142,7 +142,7 @@ export function AboutSection() {
             </div>
 
             <div className="text-center rounded-md">
-              <a href="/CV-Melvin-Jordan.pdf" download>
+              <a href="/CV-MelvinJordanPangestu.pdf" download>
                 <Button size="lg" variant="default">
                   Download My Resume
                 </Button>
